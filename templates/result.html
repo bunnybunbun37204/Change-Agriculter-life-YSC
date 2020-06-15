@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block content %}
+<center>
+    <dir class="welcome2">
+        ตารางแสดผลปริมาณแม่ปุ๋ยและราคา
+    </dir>
+    <table style="width: 50%; height: 80%; text-align: center;" border="1"  class="w3-animate-opacity">
+        <tr>
+            <th>ชื่อแม่ปุ๋ย</th>
+            <th>ปริมาณแม่ปุ๋ย</th>
+            <th>ราคาแม่ปุ๋ย</th>
+        </tr>
+        <tr>
+            <th>ปุ๋ยไนโตรเจน</th>
+            <td>{{urea}} กิโลกรัม</td>
+            <td>{{cost_Urea}} บาท</td>
+        </tr>
+        <tr >
+            <th>ปุ๋ย DAP</th>
+            <td>{{dap}} กิโลกรัม</td>
+            <td>{{cost_DAP}} บาท</td>
+        </tr>
+        <tr>
+            <th>ปุ๋ย MOP</th>
+            <td>{{mop}} กิโลกรัม</td>
+            <td>{{cost_MOP}} บาท</td>
+        </tr>
+        <tr>
+            <th>สารเติมเต็ม</th>
+            <td>{{element}} กิโลกรัม</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <th>ปริมาณรวม</th>
+            <td>{{total}} กิโลกรัม</td>
+            <td>{{cost_Total}} บาท</td>
+        </tr>
+    </table><br>
+    <form action="/">
+        <button class="w3-button w3-light-green">กลับ</button></form>
+</center>
+{% endblock %}

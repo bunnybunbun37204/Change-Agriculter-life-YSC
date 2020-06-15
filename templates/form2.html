@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <center><div class="welcome2">Change Agriculturist's Life</div>
+        <div class="welcome3">สามารถกรอกสูตรปุ๋ยได้ตามต้องการ</div><br>
+    <form action="/addForm2" method="get" class ="w3-animate-opacity">
+        <div class="form-group">
+            <label for="" class="welcome3" class="focus">AREA (RAI)</label>
+            <input type="text" class="form-control" name="num1" style="width: 30%;">
+        </div>
+        <div class="form-group">
+            <label for="" class="welcome3" class="focus">AGE</label>
+            <input type="text" class="form-control" name="num2" style="width: 30%;">
+        </div>
+        <input type="submit" value="submit" class="botton">
+    </form>
+    </center>
+{% endblock %}

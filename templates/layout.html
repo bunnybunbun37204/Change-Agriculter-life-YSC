@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Change Agriculturist's life </title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  </head>
+<body>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/"> Change Agriculturist's life</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/foropen" >
+                คำนวณปุ๋ยผสมยางพารา<span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link " href="/foropen2" >
+                คำนวณปุ๋ยผสมสำหรับปาล์มน้ำมัน<span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link " href="/foropen3" >
+                คำนวณปุ๋ยผสมกำหนดเอง<span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">About Dev.</button>
+          </form>
+        </div>
+      </nav>
+      <div class="container">
+          {% block content %}
+
+          {% endblock %}
+
+      </div>
+      <style>
+        body {
+          background:darkslategrey;
+          font-family: 'Kanit', sans-serif;
+        }
+        table {
+                border : 55px;
+                width: 100%;
+                height: 100%;
+                background-color: lightyellow;
+        }
+        th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+          }
+
+        tr:hover{background-color:#f5f5f5}
+        .welcome {
+            font-size: 60px;
+            font-family: 'Kanit', sans-serif;
+            color: lightyellow;
+        }
+        .welcome2 {
+            font-size: 40px;
+            font-family: 'Kanit', sans-serif;
+            color: lightyellow;
+        }
+        .welcome3 {
+            font-size: 20px;
+            font-family: 'Kanit', sans-serif;
+            color: lightyellow;
+        }
+        .botton {
+          background-color: darkgreen;
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        .botton2 {
+          background-color: lightslategray;
+          width: 60%;
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+          
+        }
+        .botton3{
+          background-color: lightslategray;
+          width: 60%;
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        .focus{
+         background-color: lightblue;
+        }
+        
+    </style>
+</body>
+</html>
