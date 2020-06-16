@@ -75,8 +75,6 @@ def addBlog(request):
     cost_DAP = round(active_Phosphorus*17.7,2)
     cost_MOP = round(Mop*10,2)
     cost_Total = round(cost_DAP+cost_Urea+cost_MOP,2)
-    Data.info = Data(age = age,Area=area)
-    Data.info.save()
     return render(request,'result.html',
     {'urea':Urea,
     'dap': active_Phosphorus,
