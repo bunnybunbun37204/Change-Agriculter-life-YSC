@@ -329,7 +329,7 @@ def addCustom(request):
     Mop = round(kilogram*potasium/60,2)
     total = round(Urea+active_Phosphorus+Mop,2)
     element = round(kilogram-total,2)
-    result = total+element
+    result = round(total+element,2)
     cost_Urea = round(Urea*11.9,2)
     cost_DAP = round(active_Phosphorus*17.7,2)
     cost_MOP = round(Mop*10,2)
@@ -357,7 +357,7 @@ def addCustom2(request):
     Mop = round(kilogram*potasium/60,2)
     total = round(Urea+active_Phosphorus+Mop,2)
     element = round(kilogram-total,2)
-    result = total+element
+    result = round(total+element,2)
     cost_Urea = round(Urea*7,2)
     cost_DAP = round(active_Phosphorus*17.7,2)
     cost_MOP = round(Mop*10,2)
