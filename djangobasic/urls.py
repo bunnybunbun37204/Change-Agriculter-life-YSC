@@ -34,6 +34,7 @@ urlpatterns = [
     path('addForm2/',views.addBlog2),
     path('addForm2_1/',views.addBlog2_1),
     path('addCustom/',views.addCustom),
+    path('viewDev/',views.viewDev)
 
 ]
 

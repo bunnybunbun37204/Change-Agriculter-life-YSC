@@ -373,3 +373,5 @@ def addCustom2(request):
     'cost_MOP':cost_MOP,
     'cost_Total':cost_Total
      })
+def viewDev(request):
+    return render(request,'viewDev.html')
