@@ -375,4 +375,4 @@ def addCustom2(request):
 def viewDev(request):
     return render(request,'viewDev.html')
 def optimizeFertilizer_open(request):
-    return render(request,'viewoptimizeOpen.html')
+    return render(request,'viewratio.html')
