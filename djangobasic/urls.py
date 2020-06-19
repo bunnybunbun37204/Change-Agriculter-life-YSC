@@ -40,7 +40,10 @@ urlpatterns = [
     path('foropenrubber21/',views.openrubber21),
     path('foropenpalm46/',views.openpalm46),
     path('foropenpalm21/',views.openpalm21),
-    
+    path('forinputrubber46/',views.inputrubber46),
+    path('forinputrubber21/',views.inputrubber21),
+    path('forinputpalm46/',views.inputpalm46),
+    path('forinputpalm21/',views.inputpalm21),
 
 ]
 

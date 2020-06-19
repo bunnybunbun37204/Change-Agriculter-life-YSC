@@ -383,5 +383,21 @@ def openrubber21(request):
 def openpalm46(request):
     return render(request,'palm46.html')
 def openpalm21(request):
-    return render(request,'palm4646.html')
+    return render(request,'palm21.html')
+def inputrubber46(request):
+    return 0
+def inputrubber21(request):
+    return 0
+def inputpalm46(request):
+    return 0
+def inputpalm21(request):
+    area=int(request.GET['area'])
+    chemical_ferilizer = round(area*30.3,2) 
+    organic_fertilizer = round(area*4.7,2)
+    tottal_fertilizer = round(chemical_ferilizer+organic_fertilizer)
+    return render(request,'resultratio.html',{
+        'chemical' : chemical_ferilizer,
+        'organic'  : organic_fertilizer,
+        'total' : tottal_fertilizer,   
+    })
 
