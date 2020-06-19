@@ -36,6 +36,11 @@ urlpatterns = [
     path('addCustom/',views.addCustom),
     path('viewDev/',views.viewDev),
     path('forviewratio/',views.optimizeFertilizer_open),
+    path('foropenrubber46/',views.openrubber46),
+    path('foropenrubber21/',views.openrubber21),
+    path('foropenpalm46/',views.openpalm46),
+    path('foropenpalm21/',views.openpalm21),
+    
 
 ]
 

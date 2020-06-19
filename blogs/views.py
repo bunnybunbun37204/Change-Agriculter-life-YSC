@@ -376,3 +376,12 @@ def viewDev(request):
     return render(request,'viewDev.html')
 def optimizeFertilizer_open(request):
     return render(request,'viewratio.html')
+def openrubber46(request):
+    return render(request,'rubber46.html')
+def openrubber21(request):
+    return render(request,'rubber21.html')
+def openpalm46(request):
+    return render(request,'palm46.html')
+def openpalm21(request):
+    return render(request,'palm4646.html')
+
