@@ -31,7 +31,6 @@ def addBlog(request):
     potasium=int(request.GET['num3'])
     phosphorus=int(request.GET['num2'])
     kilogram = int(request.GET['num4'])
-    area = kilogram
     age = int(request.GET['num5'])
     if age in range(0,3):
         kilogram=round(kilogram*70*150/1000)
