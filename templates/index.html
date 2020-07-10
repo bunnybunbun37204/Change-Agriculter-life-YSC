@@ -1,29 +1,53 @@
-{% extends 'layout.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/dakirby309/windows-8-metro/24/Apps-Calculator-Metro-icon.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <title>Change Agriculturist's life </title>
+</head>
+<body>
+    <center>
+        <br><br><br>
+        <div class="welcome">ยินดีต้อนรับ</div>
+        <p>
+        "Change Agriculturist's life เป็นเว็บแอพพลิเคชันที่จัดทำขึ้นเพื่อช่วยเหลือเกษตรกรและผู้ที่มีความสนใจ ได้นำไปใช้ในการทำเกษตรกรรมให้เกิดประโยชน์สูงสุด"
+        </p>
+        <div class="explain">
+            ฟังก์ชันหลักในเว็บแอพพลิเคชัน
+        </div>
+        <p>
+            1. คำนวณหาอัตราส่วนแม่ปุ๋ยสำหรับยางพาราและปาล์มน้ำมันในแต่ละช่วงอายุ พร้อมประมาณราคา
+        </p>
+        <p>
+            2. คำนวณหาอัตราส่วนแม่ปุ๋ยสำหรับสูตรปุ๋ยที่ผู้ใช้งานต้องการ พร้อมประมาณราคา
+        </p>
+        <p>
+            3. คำนวณหาอัตราส่วนที่เหมาะสมที่สุดของการใส่ปุ๋ยเคมี คู่กับปุ๋ยอินทรีย์เคมี(9-3-5) ในยางพาราและปาล์มน้ำมัน ในช่วงอายุ 7 ปีขึ้นไปและ 5 ปีขึ้นไป ตามลำดับ
+        </p>
+        <form action="preindex.html">
+            <input type="submit" value="เข้าสู่เว็บไซต์" class="btn btn-success">
+        </form>
+    </center>
+    <style>
+        body {
+          background: lavender;
+          font-family: 'Kanit', sans-serif;
+        }
+        .welcome{
+            font-size: 60px;
+        }
+        .explain{
+            font-size: 40px;
+        }
 
-{% block content %}
-<br><br><br>
-<center>
-    <div  class="w3-animate-opacity" style="font-size: 60px;font-family: 'Kanit', sans-serif;
-color: lightyellow;">Welcome to my application</div><br>
- <form action="/foropen"  class ="w3-animate-top">
-    <button class="botton2"><div class="welcome3"> 
-            คำนวณปุ๋ยผสมสำหรับยางพารา
-    </div></button>
-    </form>
-<form action="/foropen2" class ="w3-animate-zoom">
-        <button class="botton2"><div class="welcome3"> 
-            คำนวณปุ๋ยผสมสำหรับปาล์มน้ำมัน
-    </div></button>
-        </form>
-<form action="/foropen3" class ="w3-animate-left">
-        <button class="botton2"><div class="welcome3"> 
-                        คำนวณปุ๋ยผสมกำหนดเอง
-        </div></button>
-        </form>
-<form action="/forviewratio" class ="w3-animate-zoom">
-         <button class="botton2"><div class="welcome3"> 
-                                   อัตราส่วนปุ๋ยเคมีต่อปุ๋ยอินทรีย์
-                                </div></button>
-</form>
-</center>
-{% endblock %}
+    </style>
+</body>
+</html>

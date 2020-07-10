@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<br><br><br>
+<center>
+    <div  class="w3-animate-opacity" style="font-size: 60px;font-family: 'Kanit', sans-serif;
+color: lightyellow;">Welcome to my application</div><br>
+ <form action="/foropen"  class ="w3-animate-top">
+    <button class="botton2"><div class="welcome3"> 
+            คำนวณปุ๋ยผสมสำหรับยางพารา
+    </div></button>
+    </form>
+<form action="/foropen2" class ="w3-animate-zoom">
+        <button class="botton2"><div class="welcome3"> 
+            คำนวณปุ๋ยผสมสำหรับปาล์มน้ำมัน
+    </div></button>
+        </form>
+<form action="/foropen3" class ="w3-animate-left">
+        <button class="botton2"><div class="welcome3"> 
+                        คำนวณปุ๋ยผสมกำหนดเอง
+        </div></button>
+        </form>
+<form action="/forviewratio" class ="w3-animate-zoom">
+         <button class="botton2"><div class="welcome3"> 
+                                   อัตราส่วนปุ๋ยเคมีต่อปุ๋ยอินทรีย์
+                                </div></button>
+</form>
+</center>
+{% endblock %}
