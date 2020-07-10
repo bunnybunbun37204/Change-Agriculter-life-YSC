@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% block content %}
+<center>
+    <dir class="welcome2">ตารางแสดงผล</dir>
+    <h4 style="color: lightyellow;">
+    การใส่ปุ๋ยเคมีสูตร {{str1}} ร่วมกับปุ๋ยอินทรีย์เคมีสูตร 9-3-5
+    </h4>
+    <table style="width: 70%; height: 80%; text-align: center;" border="1"  class="w3-animate-opacity">
+        <tr>
+            <th>ชนิดปุ๋ย</th>
+            <th>ปริมาณปุ๋ย (กิโลกรัม)</th>
+        </tr>
+        <tr>
+            <th>ปุ๋ยเคมีสูตร {{str1}}</th>
+            <td>{{fstchem}}</td>
+        </tr>
+        <tr >
+            <th>ปุ๋ยอินทรีย์เคมีสูตร 9-3-5</th>
+            <td>{{fstorg}}</td>
+        </tr>
+        <tr >
+            <th>ปริมาณรวม</th>
+            <td>{{fsttol}}</td>
+        </tr>
+    </table><br>
+    <h4 style="color: lightyellow;">
+        การใส่ปุ๋ยเคมีสูตร {{str2}} ร่วมกับปุ๋ยอินทรีย์เคมีสูตร 9-3-5
+        </h4>
+        <table style="width: 70%; height: 80%; text-align: center;" border="1"  class="w3-animate-opacity">
+            <tr>
+                <th>ชนิดปุ๋ย</th>
+                <th>ปริมาณปุ๋ย (กิโลกรัม)</th>
+            </tr>
+            <tr>
+                <th>ปุ๋ยเคมีสูตร {{str2}}</th>
+                <td>{{scndchem}}</td>
+            </tr>
+            <tr >
+                <th>ปุ๋ยอินทรีย์เคมีสูตร 9-3-5</th>
+                <td>{{scndorg}}</td>
+            </tr>
+            <tr >
+                <th>ปริมาณรวม</th>
+                <td>{{scndtotal}}</td>
+            </tr>
+        </table><br>
+    <form action="/">
+        <button class="w3-button w3-light-green">กลับ</button></form>
+</center>
+{% endblock %}

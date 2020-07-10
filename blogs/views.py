@@ -376,28 +376,69 @@ def viewDev(request):
     return render(request,'viewDev.html')
 def optimizeFertilizer_open(request):
     return render(request,'viewratio.html')
-def openrubber46(request):
-    return render(request,'rubber46.html')
-def openrubber21(request):
-    return render(request,'rubber21.html')
-def openpalm46(request):
-    return render(request,'palm46.html')
-def openpalm21(request):
-    return render(request,'palm21.html')
-def inputrubber46(request):
-    return 0
-def inputrubber21(request):
-    return 0
-def inputpalm46(request):
-    return 0
-def inputpalm21(request):
-    area=int(request.GET['area'])
-    chemical_ferilizer = round(area*30.3,2) 
-    organic_fertilizer = round(area*4.7,2)
-    tottal_fertilizer = round(chemical_ferilizer+organic_fertilizer)
-    return render(request,'resultratio.html',{
-        'chemical' : chemical_ferilizer,
-        'organic'  : organic_fertilizer,
-        'total' : tottal_fertilizer,   
-    })
+def openrubber(request):
+    return render(request,'rubber.html')
+def openpalm(request):
+    return render(request,'palm.html')
+def rubberResult(request):
+    area = int(request.GET['area'])
+    age = int(request.GET['age'])
+    if age >= 7 and age<=15: #15-7-18 and 20-8-20
+        string1 = '15-7-18'
+        string2 = '20-8-20'
+        fstChemical = round(30.3*area,2)
+        fstOrganic = round(4.7*area,2)
+        scndChemical = round(16.5*area,2)
+        scndOrganic = round(18.4*area,2)
+    elif age>15: #21-7-18, 30-3-18
+        string1 = '21-7-18'
+        string2 = '30-3-18'
+        fstChemical = round(6.7*area,2)
+        fstOrganic = round(42.27*area,2)
+        scndChemical = round(6.7*area,2)
+        scndOrganic = round(42.27*area,2)
+    else:
+        string1 = 'ไม่ทราบค่า'
+        string2 = 'ไม่ทราบค่า'
+        fstChemical = 0
+        fstOrganic = 0
+        scndChemical = 0
+        scndOrganic = 0
+    fstTotal = fstChemical+fstOrganic
+    scndTotal = scndChemical+scndOrganic
+    return render(request,'ratioResult.html',
+    {
+        'fstchem':fstChemical,
+        'fstorg':fstOrganic,
+        'fsttotal':fstTotal,
+        'scndchem':scndChemical,
+        'scndorg':scndOrganic,
+        'scndtotal':scndTotal,
+        'str1':string1,
+        'str2':string2,
+     })
+def palmResult(request):
+    area = int(request.GET['area'])
+    age = int(request.GET['age'])
+    if age >= 5 and age<=6: #14-9-20
+        string = '14-9-20'
+        fstChemical = round(24.14*area,2)
+        fstOrganic = round(4.21*area,2)
+    elif age>6: #14-14-21
+        string = '14-14-21'
+        fstChemical = round(97.63*area,2)
+        fstOrganic = round(169.89*area,2)
+    else:
+        string = 'ไม่ทราบค่า'
+        fstChemical = 0
+        fstOrganic = 0
+    fstTotal = fstChemical+fstOrganic
+    return render(request,'ratioResult1.html',
+    {
+        'fstchem':fstChemical,
+        'fstorg':fstOrganic,
+        'fsttotal':fstTotal,
+        'str':string,
+     })
+
 
