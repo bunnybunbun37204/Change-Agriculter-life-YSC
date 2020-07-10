@@ -6,10 +6,9 @@
     <form action="/addCustom" method="get" class ="w3-animate-opacity">
         <div class="form-group">
             <label for="" class="welcome3" class="focus">ไนโตรเจน</label>
-            <input type="text" class="form-control" name="num1" style="width: 30%;" >
-            <div class="invalid-feedback">
-                กรุณากรอกตัวเลข
-              </div>      
+            <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+    <div class="invalid-feedback">
+            <input type="text" class="form-control" name="num1" style="width: 30%;" >    
         </div>
         <div class="form-group">
             <label for="" class="welcome3" class="focus">ฟอสฟอรัส</label>
@@ -23,6 +22,6 @@
             <label for="" class="welcome3" class="focus">ปริมาณที่ต้องการ (กิโลกรัม)</label>
             <input type="text" class="form-control" name="num4" style="width: 30%;">
         </div>
-        <input type="คำนวณ" value="submit" class="btn btn-success">
+        <input type="submit" value="คำนวณ" class="btn btn-success">
     </center>
 {% endblock %}
