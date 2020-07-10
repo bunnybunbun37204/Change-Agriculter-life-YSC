@@ -40,6 +40,7 @@ urlpatterns = [
     path('foropenpalm/',views.openpalm),
     path('forinputrubber/',views.rubberResult),
     path('forinputpalm/',views.palmResult),
+    path('forpreindex/',views.preindex),
 
 ]
 

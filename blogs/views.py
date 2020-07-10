@@ -4,6 +4,8 @@ from .models import Data
 # Create your views here.
 def hello(request):
     return render(request,'index.html')
+def preindex(request):
+    return render(request,'preindex.html')
 def foropen(request):
     return render(request,'foropen.html')
 def foropen2(request):
