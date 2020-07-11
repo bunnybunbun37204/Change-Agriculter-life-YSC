@@ -406,8 +406,8 @@ def rubberResult(request):
         fstOrganic = 0
         scndChemical = 0
         scndOrganic = 0
-    fstTotal = fstChemical+fstOrganic
-    scndTotal = scndChemical+scndOrganic
+    fstTotal = round(fstChemical+fstOrganic,2)
+    scndTotal = round(scndChemical+scndOrganic,2)
     return render(request,'ratioResult.html',
     {
         'fstchem':fstChemical,
@@ -434,7 +434,7 @@ def palmResult(request):
         string = 'ไม่ทราบค่า'
         fstChemical = 0
         fstOrganic = 0
-    fstTotal = fstChemical+fstOrganic
+    fstTotal = round(fstChemical+fstOrganic,2)
     return render(request,'ratioResult1.html',
     {
         'fstchem':fstChemical,
